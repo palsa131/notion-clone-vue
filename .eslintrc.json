@@ -3,11 +3,11 @@
     "browser": true,
     "node": true
   },
-  "extends": ["eslint:recommanded", "plugin:vue/vue3-recommended"],
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
   "rules": {
     "semi": ["error", "never"],
-    "quetes": ["error", "single"],
-    "vue/html-closing-braket-newline": [
+    "quotes": ["error", "single"],
+    "vue/html-closing-bracket-newline": [
       "error",
       {
         "singleline": "never",
