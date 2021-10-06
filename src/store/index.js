@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import message from './mesage'
+import message from './message'
 
 export default createStore({
 	mudules:{
