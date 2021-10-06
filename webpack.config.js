@@ -27,6 +27,11 @@ module.exports = {
         // 먼저 실행되어야 하는것이 나중에 작성되어야함
         // 해석 순서는 아래에서 위 오른쪽에서 왼쪽 이기 때문
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/, //제외할 경로
+        use: 'babel-loader' //js는 바벨로
+      }
     ],
   },
   plugins: [
