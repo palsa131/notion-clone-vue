@@ -1,2 +1,1 @@
-# vue_webpack_setting
-## Vue 프로젝트를 webpack으로 번들링하여 실행하기 위한 기본적인 셋팅을 저장하기 위함입니다.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/81be3f7e-e1f2-4db3-b32f-f0c90c85c77c/deploy-status)](https://app.netlify.com/sites/competent-payne-fd8b2e/deploys)
