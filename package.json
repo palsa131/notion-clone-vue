@@ -37,6 +37,7 @@
     "postcss-loader": "^6.1.1"
   },
   "dependencies": {
+    "interactjs": "^1.10.11",
     "vue": "^3.2.19",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"

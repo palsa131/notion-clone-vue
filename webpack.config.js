@@ -23,7 +23,21 @@ module.exports = {
       },
       {
         test: /\.s?css$/, //s가 없거나 있거나
-        use: ['vue-style-loader', 'css-loader','postcss-loader', 'sass-loader'], // 작성순서 중요
+        use: ['vue-style-loader', 'css-loader','postcss-loader', {
+          loader: 'sass-loader',
+          options: {
+            additionalData: `
+              @use "sass:color";
+              @use "sass:list";
+              @use "sass:map";
+              @use "sass:math";
+              @use "sass:meta";
+              @use "sass:selector";
+              @use "sass:string";
+              @import "~/scss/_variables";
+            `
+          }
+        }], // 작성순서 중요
         // 먼저 실행되어야 하는것이 나중에 작성되어야함
         // 해석 순서는 아래에서 위 오른쪽에서 왼쪽 이기 때문
       },
