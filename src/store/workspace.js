@@ -110,12 +110,9 @@ export default {
 //기본적인 store module template
 
 async function _request(options){
-	const { id = '' } = options
-	return await fetch(`https://kdt.roto.codes/documents/${id}`,{
-				...options,
-				headers: {
-					'Content-Type': 'application/json',
-					'x-username': 'palsa131'
-				},				
-			}).then(res => res.json())
+	return fetch('/.netlify/functions/workspace',{
+		method: 'POST',
+		body: JSON.stringify(options)
+	})
+	.then(res => res.json())
 }

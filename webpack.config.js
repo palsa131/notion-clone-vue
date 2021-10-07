@@ -63,6 +63,7 @@ module.exports = {
     }),
   ],
   devServer: { // 개발 서버용
+    port: 8079,
     historyApiFallback: true
   }
 }
